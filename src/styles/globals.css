@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-    @apply scroll-smooth;
+    @apply overflow-x-hidden scroll-smooth scrollbar-thin scrollbar-track-cdark scrollbar-thumb-cyellow;
 }
