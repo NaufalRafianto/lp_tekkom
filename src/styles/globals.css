@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    color-scheme: light;
-    padding: 0;
-    margin: 0;
+:root {
+    @apply scroll-smooth;
 }
