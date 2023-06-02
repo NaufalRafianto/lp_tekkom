@@ -7,6 +7,7 @@ export default function Header() {
             <div>Header</div>
             <a href="#map">map</a>
             <a href="#about">about</a>
+            <a href="#activity">activity</a>
         </header>
     )
 }
