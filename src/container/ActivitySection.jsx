@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function ActivitySection({ id }) {
@@ -11,7 +12,7 @@ export default function ActivitySection({ id }) {
         },
         {
             id: 'organization',
-            src: 'https://www.its.ac.id/komputer/wp-content/uploads/sites/28/2019/12/WhatsApp-Image-2019-12-18-at-08.17.20-768x512.jpeg',
+            src: 'https://www.its.ac.id/komputer/wp-content/uploads/sites/28/2019/12/WhatsApp-Image-2019-12-18-at-08.17.20-768x512.jpegnpm',
             desc: 'Berorganisasi untuk meningkatkan soft skill mahasiswa Departemen Teknik Komputer.',
             href: 'https://www.its.ac.id/komputer/id/mahasiswa/himpunan-mahasiswa-teknik-komputer/',
         },
@@ -35,7 +36,8 @@ export default function ActivitySection({ id }) {
                     <div className="card-container max flex justify-center gap-10 max-md:flex-col ">
                         {image.map((item) => {
                             return (
-                                <a
+                                <Link
+                                    target="_blank"
                                     key={item.id}
                                     href={item.href}
                                     className="group relative block h-3/4 w-1/4 rounded-lg bg-cdark shadow max-md:mx-auto max-md:w-11/12"
@@ -47,7 +49,7 @@ export default function ActivitySection({ id }) {
                                         className="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                                     />
                                     <div className="relative p-4 sm:p-6 lg:p-8">
-                                        <p className="text-sm font-medium uppercase tracking-widest text-cyellow">
+                                        <p className="text-sm font-semibold uppercase tracking-widest text-cyellow">
                                             Activity
                                         </p>
 
@@ -59,7 +61,7 @@ export default function ActivitySection({ id }) {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             )
                         })}
                     </div>
